@@ -32,8 +32,9 @@ def caesar_cipher(string, shift_factor)
     end
   end
 
-  puts "" # - for inserting newline after prints 
-          # - print doesn't insert newline
+  # for inserting newline after prints. print() doesn't
+  # insert newline.  
+  puts ""
 end
 
 caesar_cipher("What a string!", 5)
