@@ -1,4 +1,6 @@
 def is_letter?(char)
+  return false if char.length > 1
+
   char.match?(/\A[a-zA-Z]*\z/)
 end
 
