@@ -31,4 +31,16 @@ RSpec.describe do
       end
     end
   end
+
+  describe '#is_upper?' do
+    it 'works with uppercase letter' do
+      expect(is_upper?('A')).to be_truthy
+      expect(is_upper?('Z')).to be_truthy
+    end
+
+    it 'doesn\'t work with lowercase letter' do
+      expect(is_upper?('a')).to be_falsy
+      expect(is_upper?('z')).to be_falsy
+    end
+  end
 end
